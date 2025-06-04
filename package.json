@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint && npx prettier . --write",
+    "clean": "rimraf node_modules && rimraf dist && rimraf package-lock.json",
+    "install:build": "npm install && next build",
+    "update-undp-libraries": "npm i @undp/design-system-react@latest @undp/data-viz@latest && git add . && git commit -m \"update libraries\" && git push"
   },
   "dependencies": {
     "@undp/data-viz": "^0.0.85",
