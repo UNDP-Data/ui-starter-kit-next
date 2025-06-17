@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { SimpleBarGraph } from '@undp/data-viz';
 import { H3 } from '@undp/design-system-react';
 
-import '@undp/design-system-react/style.css';
 import '@undp/data-viz/style.css';
+import '@undp/design-system-react/style.css';
 
 export default function Home() {
   return (
